@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Importa a fonte Poppins do Google Fonts para ser utilizada no site*/
+
+*{
+font-family: "Poppins", sans-serif; /*Define a fonte padrão do site como Poppins, com uma fonte de fallback sans-serif caso a Poppins não esteja disponível*/
+margin: 0; /*Espaçamento externo */
+padding: 0; /*Espaçamento interno */
+box-sizing: border-box; /*Inclui o padding e a borda na largura e altura do elemento*/}
+/* Asterisco (*) é um seletor universal que aplica as regras a todos os elementos da página */
+
+html{scroll-snap-type: y mandatory; /*Define o comportamento de rolagem da página, permitindo que a rolagem seja suave e obrigatória no eixo vertical*/
+}
+
+
+video, .img-fiat-red {width: 100%; /*Largura do vídeo será de 100% da largura do elemento pai*/
+height: 100%; /*Altura do vídeo será proporcional à largura*/
+position: absolute; /*Posiciona o elemento de forma absoluta em relação ao seu elemento pai*/
+top: 0; /*Define a posição do elemento em relação ao topo do elemento pai*/
+left: 0; /*Define a posição do elemento em relação à esquerda do elemento pai*/
+z-index: -1; /*Define a ordem de empilhamento do elemento, colocando-o atrás de outros elementos*/
+object-fit: cover; /*Cobrir: Define como o conteúdo do elemento será redimensionado para se ajustar ao seu contêiner, mantendo a proporção e cortando o excesso*/
+filter: brightness(60%); /*Define o brilho do elemento, tornando-o mais escuro*/
+}
+
+.logo {
+    filter: brightness(100%); /*Define o brilho do elemento, tornando-o mais claro*/
+    position: fixed; /*Posiciona o elemento de forma fixa em relação à janela do navegador*/
+    width: 200px; /*Define a largura do elemento*/
+}    
+
+.item {
+    position: relative; /*Posiciona o elemento de forma relativa em relação ao seu elemento pai*/
+    display: flex; /*Define o layout do elemento como flexível, permitindo o alinhamento de seus filhos*/
+    justify-content: space-between; /*Define o alinhamento dos filhos do elemento, distribuindo-os igualmente ao longo do eixo principal*/
+    flex-direction: column; /*Define a direção do eixo principal do layout flexível como vertical*/
+    width: 100%; /*Define a largura do elemento como 100% da largura do elemento pai*/
+    height: 100vh; /*Define a altura do elemento como 100% da altura da janela de visualização*/
+    overflow: hidden; /*Oculta qualquer conteúdo que ultrapasse os limites do elemento*/
+    scroll-snap-align: start; /*Define o alinhamento do elemento em relação ao contêiner de rolagem, fazendo com que ele se alinhe ao início do contêiner*/
+}
+
+.info-carro {
+    position: absolute; /*Posiciona o elemento de forma absoluta em relação ao seu elemento pai*/
+    top: 50%; /*Define a posição vertical do elemento em relação ao topo do elemento pai*/
+    left: 50%; /*Define a posição horizontal do elemento em relação à esquerda do elemento pai*/
+    transform: translate(-50%, -50%); /*Centraliza o elemento em relação ao seu ponto de referência*/
+    text-align: center; /*Alinha o texto dentro do elemento ao centro*/
+    color: white; /*Define a cor do texto como branco*/
+    h1 {
+        font-size: 50px; /*Define o tamanho da fonte do elemento h1 como 50 pixels*/
+    }
+}
+
+.rodape {
+    position: absolute; /*Posiciona o elemento de forma absoluta em relação ao seu elemento pai*/
+    bottom: 20px; /*Define a distância do elemento em relação à parte inferior do elemento pai*/
+    left: 50%; /*Define a posição horizontal do elemento em relação à esquerda do elemento pai*/
+    transform: translateX(-50%); /*Centraliza o elemento horizontalmente em relação ao seu ponto de referência*/
+    text-align: center; /*Alinha o texto dentro do elemento ao centro*/
+    color: white; /*Define a cor do texto como branco*/
+    font-size: 12px; /*Define o tamanho da fonte do elemento como 12 pixels*/
+}
+
+button {
+    background-color: white; /*Define a cor de fundo do botão como vermelho*/
+    color: black; /*Define a cor do texto do botão como branco*/
+    padding: 10px 20px; /*Define o espaçamento interno do botão*/
+    margin: 5px; /*Define o espaçamento externo do botão*/
+    border-radius: 5px; /*Define o raio da borda do botão, arredondando os cantos*/
+    border: none; /*Remove a borda do botão*/
+    cursor: pointer; /*Altera o cursor para indicar que o elemento é clicável*/
+    font-size: 16px; /*Define o tamanho da fonte do botão como 16 pixels*/
+    opacity: 0.6; /*Define a opacidade do botão, tornando-o ligeiramente transparente*/
+}
+
+.comprar-agora {
+    background-color: green; /*Define a cor de fundo do botão como vermelho*/
+    color: black; /*Define a cor do texto do botão como branco*/
+    padding: 10px 20px; /*Define o espaçamento interno do botão*/
+    margin: 5px; /*Define o espaçamento externo do botão*/
+    border-radius: 5px; /*Define o raio da borda do botão, arredondando os cantos*/
+    border: none; /*Remove a borda do botão*/
+    cursor: pointer; /*Altera o cursor para indicar que o elemento é clicável*/
+    font-size: 16px; /*Define o tamanho da fonte do botão como 16 pixels*/
+    opacity: 0.6; /*Define a opacidade do botão, tornando-o ligeiramente transparente*/
+}
+
+.saiba-mais {
+    background-color: red; /*Define a cor de fundo do botão como vermelho*/
+    color: black; /*Define a cor do texto do botão como branco*/
+    padding: 10px 20px; /*Define o espaçamento interno do botão*/
+    margin: 5px; /*Define o espaçamento externo do botão*/
+    border-radius: 5px; /*Define o raio da borda do botão, arredondando os cantos*/
+    border: none; /*Remove a borda do botão*/
+    cursor: pointer; /*Altera o cursor para indicar que o elemento é clicável*/
+    font-size: 16px; /*Define o tamanho da fonte do botão como 16 pixels*/
+    opacity: 0.6; /*Define a opacidade do botão, tornando-o ligeiramente transparente*/
+}
+
+.texto-menu-3 {
+    color: red; /*Define a cor do texto como vermelho*/
+}
+
+.formulario, .formulario-teste {
+    position: fixed; /*Posiciona o elemento de forma fixa em relação à janela do navegador*/
+    top: 40px; /*Define a posição vertical do elemento em relação ao topo da janela do navegador*/
+    width: 600px; /*Define a largura do elemento como 100% da largura do elemento pai*/
+    height:100%; /*Define a altura do elemento como 100% da altura da janela de visualização*/
+    z-index: 3; /*Define a ordem de empilhamento do elemento, colocando-o acima de outros elementos*/
+    left: -50%; /*Define a posição horizontal do elemento em relação à esquerda do elemento pai*/
+    transition: 1.5s; /*Define a duração da transição do elemento, permitindo que ele se mova suavemente para a posição desejada*/
+    overflow: auto; /*Adiciona uma barra de rolagem ao elemento caso o conteúdo ultrapasse seus limites*/
+}
+
+.formulario-saibamais {
+    position: fixed; /*Posiciona o elemento de forma fixa em relação à janela do navegador*/
+    top: 40px; /*Define a posição vertical do elemento em relação ao topo da janela do navegador*/
+    width: 600px; /*Define a largura do elemento como 100% da largura do elemento pai*/
+    height:90%; /*Define a altura do elemento como 90% da altura da janela de visualização*/
+    z-index: 3; /*Define a ordem de empilhamento do elemento, colocando-o acima de outros elementos*/
+    left: -50%; /*Define a posição horizontal do elemento em relação à esquerda do elemento pai*/
+    transition: 1.5s; /*Define a duração da transição do elemento, permitindo que ele se mova suavemente para a posição desejada*/
+    overflow: auto; /*Adiciona uma barra de rolagem ao elemento caso o conteúdo ultrapasse seus limites*/
+}
+
+.fechar-formulario, .fechar-formulario-teste, .fechar-formulario-saibamais {
+    position: fixed; /*Posiciona o elemento de forma fixa em relação à janela do navegador*/
+    top: 10px; /*Define a posição vertical do elemento em relação ao topo da janela do navegador*/
+    z-index: 3; /*Define a ordem de empilhamento do elemento, colocando-o acima de outros elementos*/
+    background-color: red; /*Define a cor de fundo do botão como vermelho*/
+    color: white; /*Define a cor do texto do botão como branco*/
+    padding: 10px 20px; /*Define o espaçamento interno do botão*/
+    border-radius: 5px; /*Define o raio da borda do botão, arredondando os cantos*/
+    border: none; /*Remove a borda do botão*/
+    cursor: pointer; /*Altera o cursor para indicar que o elemento é clicável*/
+}
