@@ -12,7 +12,7 @@ html{scroll-snap-type: y mandatory; /*Define o comportamento de rolagem da pági
 }
 
 
-video, .img-fiat-red {width: 100%; /*Largura do vídeo será de 100% da largura do elemento pai*/
+video, .img-fiat-red, .img-fábrica {width: 100%; /*Largura do vídeo será de 100% da largura do elemento pai*/
 height: 100%; /*Altura do vídeo será proporcional à largura*/
 position: absolute; /*Posiciona o elemento de forma absoluta em relação ao seu elemento pai*/
 top: 0; /*Define a posição do elemento em relação ao topo do elemento pai*/
@@ -45,11 +45,12 @@ filter: brightness(60%); /*Define o brilho do elemento, tornando-o mais escuro*/
     left: 50%; /*Define a posição horizontal do elemento em relação à esquerda do elemento pai*/
     transform: translate(-50%, -50%); /*Centraliza o elemento em relação ao seu ponto de referência*/
     text-align: center; /*Alinha o texto dentro do elemento ao centro*/
-    color: white; /*Define a cor do texto como branco*/
-    h1 {
-        font-size: 50px; /*Define o tamanho da fonte do elemento h1 como 50 pixels*/
-    }
+    color: white; /*Define a cor do texto como branco*/   
 }
+
+.info-carro  h1 {
+    font-size: 50px; /*Define o tamanho da fonte do elemento h1 como 50 pixels*/
+    }
 
 .rodape {
     position: absolute; /*Posiciona o elemento de forma absoluta em relação ao seu elemento pai*/
@@ -97,39 +98,48 @@ button {
     opacity: 0.6; /*Define a opacidade do botão, tornando-o ligeiramente transparente*/
 }
 
-.texto-menu-3 {
-    color: red; /*Define a cor do texto como vermelho*/
+.mascara-fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6); /* Cor preta com 60% de transparência */
+    z-index: 998; /* Fica acima de toda a página, mas abaixo do formulário */
+    display: none; /* Começa escondida */
 }
 
-.formulario, .formulario-teste {
+.formulario, .formulario-teste, .formulario-saibamais {
     position: fixed; /*Posiciona o elemento de forma fixa em relação à janela do navegador*/
     top: 40px; /*Define a posição vertical do elemento em relação ao topo da janela do navegador*/
     width: 600px; /*Define a largura do elemento como 100% da largura do elemento pai*/
     height:100%; /*Define a altura do elemento como 100% da altura da janela de visualização*/
-    z-index: 3; /*Define a ordem de empilhamento do elemento, colocando-o acima de outros elementos*/
+    z-index: 999; /*Define a ordem de empilhamento do elemento, colocando-o acima de outros elementos*/
     left: -50%; /*Define a posição horizontal do elemento em relação à esquerda do elemento pai*/
     transition: 1.5s; /*Define a duração da transição do elemento, permitindo que ele se mova suavemente para a posição desejada*/
-    overflow: auto; /*Adiciona uma barra de rolagem ao elemento caso o conteúdo ultrapasse seus limites*/
+    transform: translateX(-50%); /*Centraliza o elemento horizontalmente em relação ao seu ponto de referência*/
+    overflow-y: auto; /*Permite que o conteúdo do elemento seja rolável verticalmente, caso ultrapasse a altura do elemento*/
+    overflow-x: hidden; /*Oculta qualquer conteúdo que ultrapasse os limites do elemento horizontalmente*/
 }
 
 .formulario-saibamais {
-    position: fixed; /*Posiciona o elemento de forma fixa em relação à janela do navegador*/
-    top: 40px; /*Define a posição vertical do elemento em relação ao topo da janela do navegador*/
-    width: 600px; /*Define a largura do elemento como 100% da largura do elemento pai*/
-    height:90%; /*Define a altura do elemento como 90% da altura da janela de visualização*/
-    z-index: 3; /*Define a ordem de empilhamento do elemento, colocando-o acima de outros elementos*/
-    left: -50%; /*Define a posição horizontal do elemento em relação à esquerda do elemento pai*/
-    transition: 1.5s; /*Define a duração da transição do elemento, permitindo que ele se mova suavemente para a posição desejada*/
-    overflow: auto; /*Adiciona uma barra de rolagem ao elemento caso o conteúdo ultrapasse seus limites*/
+    background-color: #000; /*Define a cor de fundo do elemento como preto*/
+    border: 2px solid  grey; /*Define a borda do elemento como uma linha sólida de 2 pixels de largura e cor cinza*/
+}
+.conteudo-caixa-formulario h1, p {
+    padding: 10px; /*Define o espaçamento interno do elemento*/
+    color: white; /*Define a cor do texto do elemento como branco*/
+    text-align: justify; /*Alinha o texto dentro do elemento de forma justificada*/
 }
 
-.fechar-formulario, .fechar-formulario-teste, .fechar-formulario-saibamais {
+.fechar-formulario{
     position: fixed; /*Posiciona o elemento de forma fixa em relação à janela do navegador*/
-    top: 10px; /*Define a posição vertical do elemento em relação ao topo da janela do navegador*/
-    z-index: 3; /*Define a ordem de empilhamento do elemento, colocando-o acima de outros elementos*/
+    top: 1px; /*Define a posição vertical do elemento em relação ao topo da janela do navegador*/
+    right: 1px; /*Define a posição horizontal do elemento em relação à direita da janela do navegador*/
+    z-index: 1000; /*Define a ordem de empilhamento do elemento, colocando-o acima de outros elementos*/
     background-color: red; /*Define a cor de fundo do botão como vermelho*/
     color: white; /*Define a cor do texto do botão como branco*/
-    padding: 10px 20px; /*Define o espaçamento interno do botão*/
+    padding: 8px 16px; /*Define o espaçamento interno do botão*/
     border-radius: 5px; /*Define o raio da borda do botão, arredondando os cantos*/
     border: none; /*Remove a borda do botão*/
     cursor: pointer; /*Altera o cursor para indicar que o elemento é clicável*/

@@ -14,67 +14,82 @@
 </head>
 
 <body>
+
+    <div class="mascara-fundo"></div>
+
     <img src="./img/LOGO.png" alt="Logo da FIAT" class="logo"> <!--Logo da FIAT-->
 
     <ul class="lista">
-    
-    <!--Item 1-->
-    <li class="item"> <!--Caixa = Divisão do site-->
 
-        <video src="./img/FIAT MOBI VIDEO VENDA.mp4" autoplay loop muted></video>
+        <!--Item 1-->
+        <li class="item"> <!--Caixa = Divisão do site-->
 
-        <div class="info-carro">
-            <h1>FIAT MOBI</h1> <!--Título-->
-            <p>Parcela a partir de R$ 1.950,00</p>
-        </div>
+            <video src="./img/FIAT MOBI VIDEO VENDA.mp4" autoplay loop muted></video>
 
-        <div class="rodape">
-            <button onclick="abrirFormulario()" class="comprar-agora">Comprar agora</button>
-            <button onclick="abrirFormularioTeste()" class="faça-test-drive">Faça um test drive</button>
-            <button onclick="abrirsaibamais()" class="saiba-mais">Saiba mais</button>
-            <p>Não garantimos seu veículo imediatamente. Consultar estoque.*</p>
-        </div>
-    </li>
-    
-    <!--Item 2-->
-    <li class="item"> <!--Caixa = Divisão do site-->
+            <div class="info-carro">
+                <h1>FIAT MOBI</h1> <!--Título-->
+                <p>Parcela a partir de R$ 1.950,00</p>
+            </div>
 
-        <img class="img-fiat-red" src="./img/FIAT MOBI RED.png" alt="Imagem do carro FIAT MOBI red"> <!--Imagem do carro-->
+            <div class="rodape">
+                <button onclick="abrirFormulario()" class="comprar-agora">Comprar agora</button>
+                <button onclick="abrirFormularioTeste()" class="faça-test-drive">Faça um test drive</button>
+                <button onclick="abrirsaibamais()" class="saiba-mais">Saiba mais</button>
+                <p>Não garantimos seu veículo imediatamente. Consultar estoque.*</p>
+            </div>
+        </li>
 
-        <div class="info-carro">
-            <h1>O CARRO DO ANO</h1> <!--Título-->
-            <p>Compre agora o seu FIAT MOBI!</p>
-        </div>
-    </li>
+        <!--Item 2-->
+        <li class="item"> <!--Caixa = Divisão do site-->
 
-    <!--Item 3-->
-    <li class="item"> <!--Caixa = Divisão do site-->
+            <img class="img-fiat-red" src="./img/FIAT MOBI RED.png" alt="Imagem do carro FIAT MOBI red">
+            <!--Imagem do carro-->
 
-        <video src="./img/FIAT MOBI VIDEO TESTE.mp4" autoplay loop muted></video>
+            <div class="info-carro">
+                <h1>O CARRO DO ANO</h1> <!--Título-->
+                <p>Compre agora o seu FIAT MOBI!</p>
+            </div>
+        </li>
 
-        <div class="info-carro">
-            <h1 class="texto-menu-3">ATENDIMENTO DE QUALIDADE</h1> <!--Título-->
-            <p class="texto-menu-3">Agende um teste drive na concessionária mais próxima.</p>
-        </div>
-    </li>
+        <!--Item 3-->
+        <li class="item"> <!--Caixa = Divisão do site-->
+
+            <img class="img-fábrica" src="./img/fábrica.png" alt="Imagem da fábrica">
+
+            <div class="info-carro">
+                <h1 class="texto-menu-3">ATENDIMENTO DE QUALIDADE</h1> <!--Título-->
+                <p class="texto-menu-3">Agende um teste drive na concessionária mais próxima.</p>
+            </div>
+        </li>
     </ul>
 
-<div class="formulario">
+    <div class="formulario">
 
-    <script type="text/javascript" src="https://form.jotform.com/jsform/261754166275059"></script> <!--Formulário de contato-->
-    <span class="fechar-formulario" onclick="fecharFormulario()">Fechar</span> <!--Botão para fechar o formulário-->
-</div>
+        <script type="text/javascript" src="https://form.jotform.com/jsform/261754166275059"></script>
+        <!--Formulário de contato-->
+        <span class="fechar-formulario" onclick="fecharFormulario()">Fechar</span> <!--Botão para fechar o formulário-->
+    </div>
 
-<div class="formulario-teste">
-    
-    <script type="text/javascript" src="https://form.jotform.com/jsform/261756839952676"></script> <!--Formulário de contato-->
-    <span class="fechar-formulario" onclick="fecharFormularioTeste()">Fechar</span> <!--Botão para fechar o formulário-->
-</div>
+    <div class="formulario-teste">
 
-<div class="formulario-saibamais">
-    
-    <img src="./img/saiba mais.png" alt="Saiba mais" class="img-saiba-mais"> <!--Imagem do saiba mais-->
-    <span class="fechar-formulario" onclick="fecharsaibamais()">Fechar</span> <!--Botão para fechar o formulário-->
+        <script type="text/javascript" src="https://form.jotform.com/jsform/261756839952676"></script>
+        <!--Formulário de contato-->
+        <span class="fechar-formulario" onclick="fecharFormularioTeste()">Fechar</span>
+        <!--Botão para fechar o formulário-->
+    </div>
+
+    <div class="formulario-saibamais">
+
+        <div class="conteudo-caixa-formulario">
+            <h1>CONTROLE DE ESTABILIDADE</h1>
+            <p>O Controle de Estabilidade é um sistema que, em caso de perda de aderência em terrenos de baixo atrito ou curvas, atua freando individualmente cada uma das rodas conforme a necessidade. Assim, fica bem mais fácil manter o controle do carro.</p>
+            <h1>DESIGN MODERNO</h1>
+            <p>Com visual urbano e funcional, o Fiat Mobi ganha novos detalhes de acabamento em preto fosco. De série na versão Like, maçanetas e retrovisores reforçam o estilo prático do modelo e, como opcional, o Pack Essential traz faróis de neblina e soluções inteligentes para o interior.</p>
+            <h1>MOTOR ECONôMICO</h1>
+            <p>Brutalmente econômico, o Mobi possui uma excelente relação peso-potência, que garante agilidade e respostas mais rápidas. Equipado com o Motor Firefly 1.0, ele está ainda mais potente com 75 cv e 105 Nm de torque.</p>
+        </div>
+        <span class="fechar-formulario" onclick="fecharsaibamais()">Fechar</span> <!--Botão para fechar o formulário-->
+    </div>
 
 </body>
 
