@@ -3,11 +3,11 @@
 let formulario = document.querySelector('.formulario'); //Ir no hatml buscar o elemento, a classe "formulario"
 let formularioTeste = document.querySelector('.formulario-teste'); //Ir no hatml buscar o elemento, a classe "formulario-teste"
 let formularioSaibaMais = document.querySelector('.formulario-saibamais'); //Ir no hatml buscar o elemento, a classe "formulario-saibamais"
-let mascara = document.querySelector('.mascara'); //Ir no hatml buscar o elemento, a classe "mascara"
+let mascara = document.querySelector('.mascara-fundo'); //Ir no hatml buscar o elemento, a classe "mascara"
 
-console.log (formulario); //Exibe o elemento selecionado no console
-console.log (formularioTeste); //Exibe o elemento selecionado no console
-console.log (formularioSaibaMais); //Exibe o elemento selecionado no console
+console.log(formulario); //Exibe o elemento selecionado no console
+console.log(formularioTeste); //Exibe o elemento selecionado no console
+console.log(formularioSaibaMais); //Exibe o elemento selecionado no console
 
 function abrirFormulario() { //Função para abrir o formulário
     formulario.style.left = '50%'; //Define a posição do formulário no eixo horizontal, centralizando-o na tela
