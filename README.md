@@ -1,14 +1,14 @@
 # Concessionária Virtual - FIAT MOBI
 
-Este é um projeto de uma Landing Page (página de destino) interativa para a apresentação do veículo FIAT Mobi. O site foi projetado com um visual moderno e foco na experiência do usuário, apresentando informações de parcelamento, design e especificações técnicas de forma dinâmica.
+Este é um projeto de uma landing page interativa para a apresentação do veículo FIAT Mobi. O site foi projetado com um visual moderno e foco na experiência do usuário, apresentando informações de parcelamento, design e especificações técnicas de forma dinâmica.
 
-## 🎯 Objetivo do Projeto
+## Objetivo do Projeto
 
-O objetivo principal deste projeto é apresentar o FIAT Mobi por meio de uma página de rolagem suave com transição por seções (slides) e coletar leads de potenciais clientes através de formulários de contato integrados (como test-drive e compra).
+O objetivo principal deste projeto é apresentar o FIAT Mobi por meio de uma página de rolagem suave com transição por seções e coletar leads de potenciais clientes através de formulários de contato integrados (como test-drive e compra).
 
 ---
 
-## 📂 Arquivos do Projeto e Suas Funcionalidades
+## Arquivos do Projeto e Suas Funcionalidades
 
 O projeto é estruturado por três arquivos principais, cada um responsável por uma camada do desenvolvimento web (Estrutura, Estilo e Comportamento):
 
@@ -32,16 +32,16 @@ O projeto é estruturado por três arquivos principais, cada um responsável por
 
 ---
 
-## ⚡ Funcionalidades em Destaque
+## Funcionalidades em Destaque
 
 * **Rolagem Magnética (Scroll Snap):** Cada seção do site ocupa exatamente 100% da altura da tela e se ajusta automaticamente durante a rolagem.
 * **Formulários Dinâmicos:** Os formulários abrem de forma lateral com um efeito de transição suave sem recarregar a página.
 * **Máscara de Fundo Interativa:** Uma camada escura cobre o site ao abrir um formulário para focar a atenção do usuário no modal. Clicar nessa máscara também fecha o formulário aberto automaticamente.
-* **Integração Externa:** Envio de formulários seguro processado através da plataforma **Jotform**.
+* **Integração Externa:** Envio de formulários seguro processado através da plataforma Jotform.
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 1. Faça o download ou clone este repositório.
 2. Certifique-se de que a pasta `img` contém todas as mídias necessárias (`LOGO.png`, `FIAT MOBI VIDEO VENDA.mp4`, etc.).
